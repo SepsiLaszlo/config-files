@@ -1,0 +1,9 @@
+alias dc="docker-compose"
+alias k='kubectl'
+alias kg='kubectl get'
+alias kgp='kubectl get pods'
+alias kgs='kubectl get services'
+alias kpf='kubectl port-forward'
+alias ka='kubectl apply'
+alias kd='kubectl delete'
+alias ke='kubectl exec -it'

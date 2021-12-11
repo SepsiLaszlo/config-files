@@ -1,0 +1,22 @@
+[alias]
+        br = branch
+        ch = checkout
+        chb = checkout -b
+        co = commit
+        st = status
+        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+        lgo = log --oneline
+        ps = push
+        psf = push --force
+        pu = pull
+        pur = pull --rebase
+        rb = rebase
+        com = commit -m
+        amend = commit --amend
+        aa = add --all
+
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[core]
+	editor = code --wait
