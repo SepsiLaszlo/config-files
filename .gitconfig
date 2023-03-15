@@ -1,3 +1,6 @@
+[user]
+	name = SepsiLaszlo
+	email = sepsi.laszlo99@gmail.com
 [alias]
         br = branch
         ch = checkout
@@ -11,12 +14,18 @@
         pu = pull
         pur = pull --rebase
         rb = rebase
+	rbc = rebase --continue
+	rba = rebase --abort
         com = commit -m
         amend = commit --amend
         aa = add --all
+	coa = git push --force add -A && git commit --amend
 
 [credential "https://github.com"]
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
 [core]
 	editor = code --wait
+[diff "enc"]
+  textconv = rails encrypted:show
+  cachetextconv = false
